@@ -1,9 +1,9 @@
 <template>
-  <div class="hero is-fullheight is-light is-bold">
+  <div class="hero is-fullheight is-dark is-bold">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title huge">{{ message }}</h1>
-        <h2 class="subtitle huge">
+        <h1 class="title is-huge-title">{{ message }}</h1>
+        <h2 class="subtitle is-huge-subtitle">
             👷‍♂️ 🛠️ 🚧 🚧  🛠️👷‍♀️
         </h2>
       </div>
@@ -22,7 +22,10 @@ export default {
 </script>
 
 <style scoped>
- .huge {
+ .is-huge-title {
      font-size: 400%;
+ }
+ .is-huge-subtitle {
+     font-size: 300%;
  }
 </style>
