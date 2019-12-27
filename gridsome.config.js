@@ -18,7 +18,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Sample Gridsome Buefy Site',
+  siteName: 'Afiq Hamzah\'s Page',
   siteUrl: 'https://friendlyuser.github.io',
   pathPrefix: '/gridsome-starter-buefy',
   plugins: [
