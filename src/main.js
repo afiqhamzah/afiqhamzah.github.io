@@ -5,9 +5,14 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 export default function (Vue, { router, head, isClient }) {
   // adding material design icons
+  // adding fontawesome 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'
+    href:'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'
+  },
+  {
+    rel: 'stylesheet',
+    href:'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
   })
   Vue.use(Buefy)
   // Set default layout as a global component
