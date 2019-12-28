@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import html2pdf from "html2pdf.js";
 
 export default {
 
@@ -32,6 +31,10 @@ export default {
         .from(element)
         .save();
     }
+  },
+
+  mounted() {
+    window.html2pdf = require("html2pdf.js");
   }
 };
 </script>
