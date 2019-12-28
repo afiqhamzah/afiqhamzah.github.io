@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="button"  @click="exportToPdf">Download Pdf</button>
+    <button class="button is-link"  @click="exportToPdf">Download Pdf</button>
   </div>
 </template>
 
