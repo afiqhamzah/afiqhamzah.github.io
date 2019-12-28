@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Navbar />
+  <Navbar :target="target"/>
   <transition name="fade" appear>
     <main> <!-- a wrapper for slot is needed -->
       <slot /> <!-- the content -->
@@ -14,7 +14,15 @@ import Navbar from '~/components/Navbar'
 export default {
   components: {
     Navbar
-  }
+  },
+    
+  props: {
+    target: {
+      type: String,
+      default:""
+    },
+  },
+
 }
 </script>
 
