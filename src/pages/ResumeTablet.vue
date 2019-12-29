@@ -3,7 +3,6 @@
   <div class="is-hidden-desktop is-hidden-mobile">
     <layout :target="target">
       <div class="container is-fluid" id="target_pdf">
-        <h1 class="title">Tablet Yo</h1>
         <main-info-tablet />
         <education-tablet />
         <employment-tablet/>
