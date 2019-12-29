@@ -7,13 +7,22 @@
       </div>
       <div class="column is-full has-text-centered">{{mainInfo.address}}</div>
       <div class="column is-full has-text-centered">
-        <a :href="`tel:${mainInfo.phone_no}`">{{mainInfo.phone_no}}</a>
+        <a :href="`tel:${mainInfo.phone_no}`">
+            <b-icon icon="phone" size="is-small"/>
+            {{mainInfo.phone_no}}
+        </a>
       </div>
       <div class="column is-full has-text-centered">
-        <a :href="`mailto:${mainInfo.email}`">{{mainInfo.email}}</a>
+        <a :href="`mailto:${mainInfo.email}`">
+            <b-icon icon="email" size="is-small"/>
+            {{mainInfo.email}}
+        </a>
       </div>
       <div class="column is-full has-text-centered">
-        <a :href="mainInfo.github">{{mainInfo.github}}</a>
+        <a :href="mainInfo.github">
+            <b-icon icon="face" size="is-small"/>
+            {{mainInfo.github}}
+        </a>
       </div>
     </div>
   </section>

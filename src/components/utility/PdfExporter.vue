@@ -1,6 +1,9 @@
 <template>
   <div>
-    <button class="button is-link"  @click="exportToPdf">Download Resume as PDF</button>
+    <button class="button is-light has-text-primary"  @click="exportToPdf">
+        Download Resume as PDF &nbsp; &nbsp; 
+        <b-icon icon="file-download"/>
+    </button>
   </div>
 </template>
 
