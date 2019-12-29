@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class="is-hidden-mobile">
     <layout :target="target">
       <div class="container is-fluid" id="target_pdf">
         <main-info />
@@ -25,7 +25,7 @@ export default {
     mainInfo,
     education,
     employment,
-    skill
+    skill,
   },
 
   data() {

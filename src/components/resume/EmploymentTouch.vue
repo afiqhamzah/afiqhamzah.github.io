@@ -5,13 +5,13 @@
     <hr />
 
     <div v-for="employment in employments" :key="employment.id">
-      <div class="columns">
+      <div class="columns is-mobile">
         <div class="column has-text-weight-bold has-text-left">{{ employment.position }}</div>
         <div class="column has-text-weight-bold has-text-centered">{{ employment.workplace }}</div>
         <div class="column has-text-weight-bold has-text-right">{{ employment.employment_period }}</div>
       </div>
 
-      <div class="content" :class="isNewPage(employment.id)">
+      <div class="content">
         <ul>
           <li v-for="detail in employment.details">{{ detail }}</li>
           <li>
@@ -34,13 +34,6 @@ export default {
     return {
       employments: data
     };
-  },
-  methods: {
-    isNewPage: function(id) {
-      if (id === 1) {
-          return "html2pdf__page-break"
-      }
-    }
   }
 };
 </script>

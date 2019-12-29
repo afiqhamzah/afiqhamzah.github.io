@@ -14,7 +14,8 @@
     "gridsome": "^0.7.5",
     "html2canvas": "^1.0.0-rc.5",
     "html2pdf.js": "^0.9.1",
-    "jspdf": "^1.5.3"
+    "jspdf": "^1.5.3",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.0",

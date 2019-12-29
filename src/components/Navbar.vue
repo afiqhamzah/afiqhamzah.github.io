@@ -1,17 +1,23 @@
 <template>
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item has-text-light" href="https://afiqhamzah.github.io/">
-      Afiq Hamzah's Page
-    </a>
-    <a class="navbar-item">
-        <pdf-exporter
-            :target="target"
-        ></pdf-exporter>
-    </a>
-    
+
+  <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item has-text-light" href="https://afiqhamzah.github.io/">
+          Afiq Hamzah's Page
+        </a>
+      </div>
   </div>
   
+  <div class="navbar-menu" >
+      <div class="navbar-end">
+         <a class="navbar-item">
+            <pdf-exporter
+                :target="target"
+            ></pdf-exporter>
+        </a>     
+      </div>
+  </div>
 </nav>
 </template>
 
