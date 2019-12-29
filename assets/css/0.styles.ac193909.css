@@ -1,4 +1,4 @@
-.fade-enter-active{transition:opacity .5s}.fade-enter{opacity:0}
+.navbar-brand .navbar-item.nav-right[data-v-1477af6e]{margin-right:0;margin-left:auto}.fade-enter-active{transition:opacity .5s}.fade-enter{opacity:0}
 
 /*! Buefy v0.8.4 | MIT License | github.com/buefy/buefy */@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@-webkit-keyframes fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:none;transform:none}}
 
