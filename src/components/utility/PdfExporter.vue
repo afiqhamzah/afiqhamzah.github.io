@@ -25,6 +25,13 @@ export default {
 
   methods: {
     exportToPdf() {
+
+      this.$swal({
+        type: 'success',
+        title: 'PDF Generated',
+        text: 'Click OK to start downloading',
+      }).then((result) => {
+
       var element = document.getElementById(this.target);
       var opt = {
         margin: 1,
@@ -38,6 +45,8 @@ export default {
         .set(opt)
         .from(element)
         .save();
+      })
+
     }
   },
 
