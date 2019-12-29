@@ -1,7 +1,8 @@
 <template>
     <div>
         <Resume/>
-        <Resume-Touch/>
+        <Resume-Tablet/>
+        <Resume-Mobile/>
     </div>
 </template>
 
@@ -9,13 +10,15 @@
 import UnderConstruction from '~/pages/UnderConstruction.vue'
 import Demo from '~/pages/Demo.vue'
 import Resume from '~/pages/Resume.vue'
-import ResumeTouch from '~/pages/ResumeTouch.vue'
+import ResumeTablet from '~/pages/ResumeTablet.vue'
+import ResumeMobile from '~/pages/ResumeMobile.vue'
 export default {
   components: {
     Demo,
     UnderConstruction,
     Resume,
-    ResumeTouch,
+    ResumeTablet,
+    ResumeMobile,
   }
 }
 </script>

@@ -55,5 +55,6 @@ export default {
 .navbar-brand .navbar-item.nav-right {
   margin-right: 0;
   margin-left: auto;
+  padding-right: 12px;
 }
 </style>

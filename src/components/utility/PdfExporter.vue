@@ -1,20 +1,25 @@
 <template>
   <div>
-    <button class="button is-light has-text-primary"  @click="exportToPdf">
-        Download Resume as PDF &nbsp; &nbsp; 
-        <b-icon icon="file-download"/>
+    <button class="button is-light has-text-primary is-hidden-touch" @click="exportToPdf">
+      Download Resume as PDF &nbsp; &nbsp;
+      <b-icon icon="file-download" />
+    </button>
+    <button
+      class="button is-light has-text-primary is-hidden-desktop is-hidden-tablet"
+      @click="exportToPdf"
+    >
+      PDF Resume &nbsp; &nbsp;
+      <b-icon icon="file-download" />
     </button>
   </div>
 </template>
 
 <script>
-
 export default {
-
   props: {
     target: {
       type: String,
-      default: ''
+      default: ""
     }
   },
 
@@ -23,7 +28,7 @@ export default {
       var element = document.getElementById(this.target);
       var opt = {
         margin: 1,
-          filename: `afiq_hamzah_resume (${moment().format("MMM Do YYYY")}).pdf`,
+        filename: `afiq_hamzah_resume (${moment().format("MMM Do YYYY")}).pdf`,
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
