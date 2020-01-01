@@ -2,7 +2,7 @@
 <template >
   <div class="is-hidden-desktop is-hidden-mobile">
     <layout :target="target">
-      <div class="container is-fluid" id="target_pdf">
+      <div class="container is-fluid target_pdf">
         <main-info-tablet />
         <education-tablet />
         <employment-tablet/>

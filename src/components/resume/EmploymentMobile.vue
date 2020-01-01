@@ -10,7 +10,7 @@
         <div class="column has-text-weight-bold has-text-right">{{ employment.employment_period }}</div>
       </div>
 
-      <div class="content">
+      <div class="content" :class="isNewPage(employment.id)">
         <ul>
           <li>
             Position as
@@ -37,6 +37,13 @@ export default {
     return {
       employments: data
     };
+  },
+  methods: {
+    isNewPage: function(id) {
+      if (id === 1) {
+        return "html2pdf__page-break";
+      }
+    }
   }
 };
 </script>

@@ -25,28 +25,39 @@ export default {
 
   methods: {
     exportToPdf() {
-
       this.$swal({
-        type: 'success',
-        title: 'PDF Generated',
-        text: 'Click OK to start downloading',
-      }).then((result) => {
+        type: "success",
+        title: "PDF Generated",
+        text: "Click OK to start downloading"
+      }).then(result => {
+        const elements = document.getElementsByClassName("target_pdf");
+        let visible_target = null;
 
-      var element = document.getElementById(this.target);
-      var opt = {
-        margin: 1,
-        filename: `afiq_hamzah_resume (${moment().format("MMM Do YYYY")}).pdf`,
-        image: { type: "jpeg", quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
-      };
+        for (let target of elements) {
+          const parent = target.parentElement.parentElement.parentElement;
+          const visible_parent = window
+            .getComputedStyle(parent)
+            .getPropertyValue("display");
+          if (visible_parent !== "none") {
+            visible_target = target;
+          }
+        }
 
-      html2pdf()
-        .set(opt)
-        .from(element)
-        .save();
-      })
+        let opt = {
+          margin: 1,
+          filename: `afiq_hamzah_resume (${moment().format(
+            "MMM Do YYYY"
+          )}).pdf`,
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+        };
 
+        html2pdf()
+          .set(opt)
+          .from(visible_target)
+          .save();
+      });
     }
   },
 

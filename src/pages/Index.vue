@@ -19,6 +19,11 @@ export default {
     Resume,
     ResumeTablet,
     ResumeMobile,
+  },
+  computed: {
+      isDesktop: function() {
+
+      }
   }
 }
 </script>
